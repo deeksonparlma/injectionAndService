@@ -5,6 +5,7 @@ import {Goals} from "../goals"
   providedIn: 'root'
 })
 export class GoalService {
-
+  getGoals(){
+    return Goals; //method to return the array//
   constructor() { }
 }
