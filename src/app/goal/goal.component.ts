@@ -9,7 +9,7 @@ import {GoalService} from '../goals/goal.service';
   providers:[GoalService],
 })
 export class GoalComponent implements OnInit {
- goals:Goals;
+ goals:Goal[];
   constructor() { }
 
   ngOnInit() {
