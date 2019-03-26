@@ -10,7 +10,9 @@ import {GoalService} from '../goals/goal.service';
 })
 export class GoalComponent implements OnInit {
  goals:Goal[];
-  constructor() { }
+ constructor(goalService:GoalService) {
+ this.goals = goalService.getGoals()
+  }
 
   ngOnInit() {
   }
